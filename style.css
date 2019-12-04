@@ -1,0 +1,434 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #333951;
+    font-weight: 600;
+}
+
+.block-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.block-title_mb30 {
+    margin-bottom: 30px;
+}
+
+.quote {
+    font-family: "Merriweather", serif;
+    font-style: italic;
+    letter-spacing: 0.02em;
+}
+
+.quotes::before {
+    content: "";
+    background: url("images/quotes.svg");
+    position: absolute;
+    top: 5px;
+    left: 2px;
+    width: 32px;
+    height: 32px;
+    transform: rotate(180deg);
+}
+
+.quotes::after {
+    content: "";
+    background: url("images/quotes.svg");
+    position: absolute;
+    right: 30px;
+    bottom: 25px;
+    width: 32px;
+    height: 32px;
+}
+
+/* Меню */
+.navbar-light .menu__item .menu__link {
+    color: #333951;
+    padding: 8px 0;
+}
+
+.navbar-dark .menu__item .menu__link {
+    color: white;
+    padding: 8px 0;
+}
+
+.menu__item:not(:last-child) {
+    margin-right: 60px;
+}
+
+.navbar-light .navbar-text .menu__contact {
+    color: #333951;
+}
+
+.menu__contact {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.menu__contact img {
+    margin-right: 15px;
+}
+
+/* Первый блок */
+.first-block {
+    margin-top: 30px;
+}
+
+.first-block__caption {
+    font-family: "Oswald", sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-top: 135px;
+}
+
+.first-block__caption_red {
+    color: red;
+}
+
+.first-block__button {
+    display: block;
+    color: white;
+    background-color: #333951;
+    width: 270px;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    box-shadow: 5px 5px 0 rgba(51, 57, 81, 0.6);
+    margin-top: 50px;
+}
+
+.first-block__button:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.first-block__image {
+    margin-top: 0;
+}
+
+.first-block__social {
+    padding: 0 15px;
+    margin-top: 20px;
+}
+
+.first-block__social a {
+    margin-right: 35px;
+}
+
+/* Достижения */
+.achievements {
+    margin-top: 80px;
+}
+
+.achievements__list {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.achievements__list li {
+    margin-bottom: 10px;
+}
+
+.achievements__list li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    display: inline-block;
+    transform: rotate(45deg);
+    margin-right: 10px;
+}
+
+.achievements__mb {
+    margin-bottom: 30px;
+}
+
+/* Первая цитата */
+.first-quote {
+    background: #f9f9f9;
+    padding: 60px 0;
+}
+
+.first-quote__text {
+    font-style: italic;
+    font-size: 22px;
+    line-height: 160%;
+    padding: 35px 20px;
+    color: rgba(51, 57, 81, 0.6);
+}
+
+/* Темы */
+.themes {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.themes__card {
+    background-color: #333951;
+    box-shadow: 5px 5px 0 rgba(51, 57, 81, 0.6);
+    height: 260px;
+    padding: 30px 15px;
+    margin-bottom: 10px;
+}
+
+.themes__caption {
+    color: white;
+}
+
+.themes__border {
+    display: block;
+    margin: 15px auto;
+}
+
+/* Вторая цитата */
+.second-quote {
+    background: #f9f9f9;
+    padding: 60px 0;
+    position: relative;
+    margin-top: 100px;
+}
+
+.second-quote__text {
+    font-size: 32px;
+    font-weight: 400;
+    color: #222222;
+    padding: 35px 20px;
+}
+
+.second-quote__author {
+    text-align: right;
+    font-weight: 900;
+    transform: translateY(50px);
+}
+
+.second-quote__author-dash {
+    color: red;
+}
+
+.second-quote__image {
+    position: absolute;
+    right: -120px;
+    bottom: -60px;
+}
+
+/* Деловые встречи */
+.meetings {
+    padding: 60px 0;
+}
+
+.meetings__title-pt20 {
+    padding-top: 20px;
+}
+
+.meetings__text {
+    color: rgba(51, 57, 81, 0.6);
+}
+
+/* Третья цитата */
+.third-quote__image {
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+}
+
+/* Форма регистрации */
+.registration {
+    text-align: center;
+    margin: 100px 0;
+}
+
+.registration__form {
+    background: #f9f9f9;
+    padding: 40px 30px;
+    position: relative;
+}
+
+.registration__form::before {
+    content: "";
+    display: block;
+    background: url("images/border.svg");
+    position: absolute;
+    left: -25px;
+    bottom: -25px;
+    width: 50px;
+    height: 50px;
+}
+
+.registration__form::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    z-index: -1;
+}
+
+.registration input,
+.registration textarea,
+.registration button {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.registration input,
+.registration textarea {
+    width: 100%;
+    padding: 15px;
+    background: rgba(51, 57, 81, 0.05);
+    border: 1px solid rgba(51, 57, 81, 0.15);
+    border-radius: 5px;
+}
+
+.registration input {
+    height: 52px;
+}
+
+.registration textarea {
+    height: 74px;
+}
+
+.registration button {
+    width: 270px;
+    height: 54px;
+    color: white;
+    background: #333951;
+    border: none;
+    box-shadow: 5px 5px 0 rgba(51, 57, 81, 0.6);
+    margin: 0 auto;
+}
+
+/* Статьи */
+.articles h2 {
+    text-align: center;
+}
+
+.article {
+    font-size: 14px;
+}
+
+.article__caption {
+    font-size: 18px;
+    line-height: 134%;
+    font-family: "Oswald", sans-serif;
+}
+
+.article__bottom {
+    text-align: justify;
+}
+
+.article__bottom:after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+}
+
+.article__author,
+.article__link {
+    display: inline-block;
+}
+
+.article__author {
+    color: rgba(51, 57, 81, 0.6);
+}
+
+.article__by {
+    font-weight: 900;
+    color: #333951;
+}
+
+.article__link {
+    text-decoration-line: underline;
+    color: #ff2a2a;
+}
+
+.article__link:hover {
+    color: #ff2a2a;
+}
+
+/* Мероприятия */
+.event {
+    margin: 70px 0;
+}
+
+.event h2 {
+    text-align: center;
+}
+
+.event-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 32px;
+}
+
+.event__text {
+    color: rgba(51, 57, 81, 0.6);
+}
+
+.event__span {
+    color: #333951;
+}
+
+.event__button {
+    display: block;
+    width: 270px;
+    height: 54px;
+    background: #ff2a2a;
+    text-align: center;
+    line-height: 54px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 5px 5px 0 rgba(255, 42, 42, 0.6);
+}
+
+.event__button:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+    background: #333951;
+}
+
+/* Медиа */
+@media (max-width: 767px) {
+    .first-block__image {
+        margin-top: 30px;
+    }
+
+    .registration textarea {
+        height: 150px;
+    }
+
+    .registration button {
+        width: 75%;
+    }
+}
+
+@media (max-width: 991px) {
+    .menu__item:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    .navbar-light .navbar-text .menu__contact,
+    .navbar-dark .navbar-text .menu__contact {
+        font-size: 16px;
+    }
+
+    .menu__contact img {
+        margin-right: 5px;
+    }
+
+    .first-block__caption {
+        margin-top: 30px;
+    }
+
+    .second-quote__image,
+    .third-quote__image {
+        display: none;
+    }
+}
