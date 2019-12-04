@@ -322,7 +322,7 @@ body {
     text-align: justify;
 }
 
-.article__bottom:after {
+.article__bottom::after {
     content: "";
     width: 100%;
     display: inline-block;
@@ -392,6 +392,95 @@ body {
 
 .footer {
     background: #333951;
+}
+
+/* Список мероприятий */
+.event-list {
+    padding: 70px;
+}
+
+.event-list h2 {
+    text-align: center;
+}
+
+.event-list__caption {
+    text-align: center;
+    font-style: italic;
+    line-height: 160%;
+    margin-bottom: 40px;
+}
+
+.event-list__item {
+    background: #f2f2f2;
+    border-radius: 10px;
+    width: 350px;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.event-list__item-last {
+    width: 350px;
+    height: 250px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.event-list__title {
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: justify;
+    padding: 15px;
+    height: 60px;
+}
+
+.event-list__title::after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+}
+
+.event-list__name,
+.event-list__date {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.event-list__name,
+.event-list__time {
+    font-family: "Oswald", sans-serif;
+}
+
+.event-list__date {
+    background: #ff2a2a;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    width: 106px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.event-list__time {
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.event-list__text {
+    font-size: 14px;
+    line-height: 160%;
+    color: rgba(51, 57, 81, 0.6);
+    padding: 20px 15px;
+}
+
+.event-list__button-pos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 
 /* Медиа */
