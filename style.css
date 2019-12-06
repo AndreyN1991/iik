@@ -219,6 +219,10 @@ body {
     padding: 60px 0;
 }
 
+.meetings__ac {
+    text-align: center;
+}
+
 .meetings__title-pt20 {
     padding-top: 20px;
 }
