@@ -394,6 +394,10 @@ body {
     color: white;
 }
 
+.event__button_ma {
+    margin: 0 auto;
+}
+
 .footer {
     background: #333951;
 }
@@ -487,9 +491,58 @@ body {
     transform: translate(-50%, -50%);
 }
 
+/* Криптофон */
+.cryptofon-itis .block-title,
+.advantages .block-title,
+.security .block-title {
+    text-align: center;
+}
+
+.cryptofon-itis__list {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.cryptofon-itis__list li {
+    margin-bottom: 30px;
+    line-height: 27px;
+}
+
+.cryptofon-itis__list li::before {
+    content: "";
+    width: 5px;
+    height: 20px;
+    background-color: red;
+    display: inline-block;
+    margin-right: 10px;
+    transform: translateY(3px) skewX(-25deg);
+}
+
+.cryptofon-itis {
+    margin-top: 80px;
+}
+
+/* Приемущества */
+.advantages__card {
+    background: #f5f5f5;
+    text-align: center;
+    height: 250px;
+    margin-bottom: 30px;
+    padding: 35px 20px;
+}
+
+.advantages__caption {
+    font-size: 13px;
+    line-height: 160%;
+    color: #333951;
+    margin-top: 25px;
+}
+
 /* Медиа */
 @media (max-width: 767px) {
-    .event-list__item, .event-list__item-last {
+    .event-list__item,
+    .event-list__item-last {
         width: 300px;
         height: 300px;
     }
