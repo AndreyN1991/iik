@@ -274,8 +274,7 @@ body {
 }
 
 .registration input,
-.registration textarea,
-.registration button {
+.registration textarea {
     display: block;
     margin-bottom: 30px;
 }
@@ -297,7 +296,7 @@ body {
     height: 74px;
 }
 
-.registration button {
+.registration input[type="submit"] {
     width: 270px;
     height: 54px;
     color: white;
