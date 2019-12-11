@@ -732,6 +732,151 @@ body {
     bottom: -15px;
 }
 
+/* Одиночная запись */
+.iik-article h1 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #333951;
+}
+
+aside h3 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #333951;
+}
+
+.iik-article span {
+    font-weight: normal;
+    font-size: 14px;
+    color: #A3A3A3;
+}
+
+.iik-article .iik-article_by {
+    font-size: 14px;
+    color: #333951;
+}
+
+.iik-article p {
+    line-height: 160%;
+    color: #858897;
+    margin-bottom: 30px;
+}
+
+.iik-article figure {
+    text-align: center;
+}
+
+.iik-article figure::after {
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid rgba(34, 34, 34, 0.3);
+    margin-top: 30px;
+}
+
+.iik-article figure img {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.iik-article_all {
+    display: block;
+    color: white;
+    width: 270px;
+    height: 54px;
+    background: #333951;
+    box-shadow: 5px 5px 0 rgba(51, 57, 81, 0.6);
+    text-align: center;
+    line-height: 54px;
+}
+
+.iik-article_all:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.iik-article_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.iik-article_list-item {
+    width: 250px;
+}
+
+.iik-article_list-item img {
+    width: 100%;
+}
+
+.iik-article_list-item p {
+    font-family: "Oswald", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 134%;
+    letter-spacing: 0.02em;
+    color: #333951;
+}
+
+.iik-article_list-item a {
+    font-size: 12px;
+    color: red;
+    text-decoration: underline;
+}
+
+.delimiter {
+    width: 100%;
+    border-bottom: 1px solid rgba(34, 34, 34, 0.3);
+}
+
+/* Отступы */
+.mh-a {
+    margin: 0 auto;
+}
+
+.mv-10 {
+    margin: 10px 0;
+}
+
+.mt-153 {
+    margin-top: 153px;
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.ph-25 {
+    padding: 0 25px;
+}
+
+.p-15-5 {
+    padding: 15px 5px;
+}
+
+/* Позиционирование */
+.span-to-right {
+    float: right;
+}
+
 /* Медиа */
 @media (max-width: 767px) {
     .event-list__item,
