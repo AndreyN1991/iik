@@ -314,31 +314,26 @@ body {
 
 .article {
     font-size: 14px;
+    position: relative;
 }
 
 .article__caption {
     font-size: 18px;
     line-height: 134%;
     font-family: "Oswald", sans-serif;
+    margin-bottom: 0;
 }
 
 .article__bottom {
-    text-align: justify;
-}
-
-.article__bottom::after {
-    content: "";
-    width: 100%;
-    display: inline-block;
-}
-
-.article__author,
-.article__link {
-    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 30px);
 }
 
 .article__author {
     color: rgba(51, 57, 81, 0.6);
+    margin-bottom: 0;
+    display: inline-block;
 }
 
 .article__by {
@@ -353,6 +348,28 @@ body {
 
 .article__link:hover {
     color: #ff2a2a;
+}
+
+.article__date {
+    background: url("/images/pennant.svg") no-repeat;
+    width: 132px;
+    height: 49px;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    line-height: 39px;
+    padding-right: 19px;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+}
+
+[class*="article-col"] {
+    padding-top: 15px;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 /* Мероприятия */
@@ -715,8 +732,8 @@ body {
 .dual-image_right-square::after {
     content: "";
     display: block;
-    background: url('images/border.svg');
-    position: absolute;    
+    background: url("images/border.svg");
+    position: absolute;
     width: 50px;
     height: 50px;
     z-index: -1;
@@ -751,7 +768,7 @@ aside h3 {
 .iik-article span {
     font-weight: normal;
     font-size: 14px;
-    color: #A3A3A3;
+    color: #a3a3a3;
 }
 
 .iik-article .iik-article_by {
@@ -770,7 +787,7 @@ aside h3 {
 }
 
 .iik-article figure::after {
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     border-bottom: 1px solid rgba(34, 34, 34, 0.3);
