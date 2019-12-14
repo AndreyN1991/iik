@@ -10,6 +10,7 @@ body {
     font-size: 32px;
     text-transform: uppercase;
     color: #333951;
+    overflow-wrap: break-word;
 }
 
 .block-title_mb30 {
@@ -704,10 +705,15 @@ body {
 }
 
 /* Двойное изображение */
+.dual-image_block {
+    white-space: nowrap;
+}
+
 .dual-image_first,
 .dual-image_second {
     display: inline-block;
     position: relative;
+    width: 50%;
 }
 
 .dual-image_first {
@@ -984,8 +990,17 @@ aside h3 {
         height: 150px;
     }
 
-    .registration button {
+    .registration input[type="submit"] {
         width: 75%;
+    }
+
+    .meetings__title-pt20 {
+        padding-top: 0;
+    }
+
+    .samrtphone {
+        padding: 10px 0;
+        margin: 10px 0;
     }
 }
 
@@ -1000,6 +1015,10 @@ aside h3 {
 
     .mt-80, .cryptofon-itis {
         margin-top: 30px;
+    }
+
+    .pv-70 {
+        padding: 30px 0;
     }
 
     .mb-80 {
