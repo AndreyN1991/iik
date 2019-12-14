@@ -896,14 +896,76 @@ aside h3 {
 
 /* Медиа */
 @media (max-width: 767px) {
-    .event-list__item,
+    .block-title, .event-title {
+        text-align: center;
+    }
+
+    .block-title_mb30, .event-list__caption {
+        margin-bottom: 15px;
+    }
+
+    .first-block {
+        margin: 15px 0;        
+    }
+
+    .first-block__caption {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .first-block__button, .event__button {
+        margin: 0 auto;
+    }
+
+    .first-block__social {
+        margin: 15px auto 0 auto;
+    }
+
+    .achievements, .second-quote {
+        margin-top: 30px;
+    }
+
+    .first-quote, .themes, .second-quote, .meetings, .event-list {
+        padding: 30px 0;
+    }
+
+    .first-quote__text, .second-quote__text {
+        font-size: 16px;
+    }
+
+    .quotes::before, .quotes::after {
+        transform: scale(0.6);
+    }
+
+    .event-list__name,
+    .event-list__date {
+        display: block;
+    }
+
+    .event-list__item {
+        width: 280px;
+        height: 280px;
+    }
+
     .event-list__item-last {
-        width: 300px;
-        height: 300px;
+        width: 280px;
+        height: 100px;
+    }
+
+    .event-list__title {
+        height: 80px;
+    }
+
+    .event-list__text {
+        padding: 0 15px;
     }
 
     .first-block__image {
         margin-top: 30px;
+    }
+
+    .registration, .event {
+        margin: 40px 0;
     }
 
     .registration textarea {
@@ -916,6 +978,38 @@ aside h3 {
 }
 
 @media (max-width: 991px) {
+    .iik-article h1 {
+        text-align: center;
+    }
+
+    .mt-153 {
+        margin-top: 20px;
+    }
+
+    .mt-80, .cryptofon-itis {
+        margin-top: 30px;
+    }
+
+    .mb-80 {
+        margin-bottom: 30px;
+    }
+
+    .iik-article figure, .cryptofon-itis__list {
+        margin: 5px 0;
+    }
+
+    .mb-30, .iik-article p, .cryptofon-itis__list li {
+        margin-bottom: 15px;
+    }
+
+    .iik-article figure img {
+        margin: 15px 0;
+    }
+
+    .iik-article figure::after {
+        margin-top: 15px;
+    }
+
     .samrtphone__image {
         display: none;
     }
