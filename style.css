@@ -24,7 +24,7 @@ body {
 
 .quotes::before {
     content: "";
-    background: url("images/quotes.svg");
+    background: url("../images/quotes.svg");
     position: absolute;
     top: 5px;
     left: 2px;
@@ -35,7 +35,7 @@ body {
 
 .quotes::after {
     content: "";
-    background: url("images/quotes.svg");
+    background: url("../images/quotes.svg");
     position: absolute;
     right: 30px;
     bottom: 25px;
@@ -254,7 +254,7 @@ body {
 .registration__form::before {
     content: "";
     display: block;
-    background: url("images/border.svg");
+    background: url("../images/border.svg");
     position: absolute;
     left: -25px;
     bottom: -25px;
@@ -351,7 +351,7 @@ body {
 }
 
 .article__date {
-    background: url("/images/pennant.svg") no-repeat;
+    background: url("../images/pennant.svg") no-repeat;
     width: 132px;
     height: 49px;
     text-align: center;
@@ -384,6 +384,7 @@ body {
 .event-title {
     font-family: "Oswald", sans-serif;
     font-size: 32px;
+    color: #333951;
 }
 
 .event__text {
@@ -545,6 +546,13 @@ body {
     padding: 80px 0;
     margin: 100px 0;
     color: white;
+}
+
+.samrtphone .samrtphone-title {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
 }
 
 .samrtphone-al {
@@ -732,7 +740,7 @@ body {
 .dual-image_right-square::after {
     content: "";
     display: block;
-    background: url("images/border.svg");
+    background: url("../images/border.svg");
     position: absolute;
     width: 50px;
     height: 50px;
@@ -883,6 +891,10 @@ aside h3 {
 
 .ph-25 {
     padding: 0 25px;
+}
+
+.pv-70 {
+    padding: 70px 0;
 }
 
 .p-15-5 {
